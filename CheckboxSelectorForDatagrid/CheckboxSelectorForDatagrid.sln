@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckboxSelectorForDatagrid", "CheckboxSelectorForDatagrid\CheckboxSelectorForDatagrid.csproj", "{C1065284-3817-4373-8B70-40679278AC05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1065284-3817-4373-8B70-40679278AC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1065284-3817-4373-8B70-40679278AC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1065284-3817-4373-8B70-40679278AC05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1065284-3817-4373-8B70-40679278AC05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A5C6FEC-44D4-4657-B346-DC80C75C75FD}
+	EndGlobalSection
+EndGlobal

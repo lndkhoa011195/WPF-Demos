@@ -1,0 +1,25 @@
+﻿<Window x:Class="CheckboxSelectorForDatagrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckboxSelectorForDatagrid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid ItemsSource="{Binding Employees}" AutoGenerateColumns="False" IsReadOnly="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding IsChecked, UpdateSourceTrigger=PropertyChanged}">
+                    <DataGridCheckBoxColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:MainWindow}, Path=DataContext.AllSelected}">Select All</CheckBox>
+                        </DataTemplate>
+                    </DataGridCheckBoxColumn.HeaderTemplate>
+                </DataGridCheckBoxColumn>
+
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
